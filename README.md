@@ -56,28 +56,15 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
    In your answers, explain briefly whether the calls using pointers behave similarly to the calls using references, and why you think that is so.
 
-6. At the top of the source file for `main`, include the `<memory>` header and add appropriate `using` declarations for the `shared_ptr` and `make_shared` templates from the standard namespace.
-
-   Replace the contents of `main` from the previous exercise with:
-
-   - two `shared_ptr` variables parameterized with the base class type
-   - one `shared_ptr` variable parameterized with the derived class type
-
-   Initialize one of the shared pointers to the base class type with `make_shared` parameterized with the base class type. Use `make_shared` parameterized with the derived class type to initialize the other base-class shared pointer and the derived-class shared pointer.
-
-   Call the virtual member function through those shared pointers, then return a descriptively named symbol whose value is `0` to indicate success.
-
-   Build and run your program. In your answers, show the output it produced.
-
-7. Replace the shared pointers in `main` with two plain C++ pointers to the base class type and one plain C++ pointer to the derived class type. Initialize the pointers with calls to `new`, creating one base-class object and two derived-class objects. After all three pointers are initialized, use them to call the virtual member function, but do not call `delete` on the pointers.
+6. Replace the pointers from the previous exercise with two plain C++ pointers to the base class type and one plain C++ pointer to the derived class type. Initialize the pointers with calls to `new`, creating one base-class object and two derived-class objects. After all three pointers are initialized, use them to call the virtual member function, but do not call `delete` on the pointers.
 
    Build and run your program. In your answers, describe the main difference you saw in the output compared with the previous exercise.
 
-8. Just before `main` returns, use the `delete` operator on each pointer to free the memory to which it points.
+7. Just before `main` returns, use the `delete` operator on each pointer to free the memory to which it points.
 
    Compile your code and note the warnings the compiler gives you. Then run your program. In your answers, show the output it produced.
 
-9. Make the destructor of each class virtual, then compile and run your code again.
+8. Make the destructor of each class virtual, then compile and run your code again.
 
    In your answers, explain briefly why the destructor must be virtual when using plain C++ pointers together with `new` and `delete` on polymorphic objects, based on the differences in output you saw between this exercise and the previous one.
 
