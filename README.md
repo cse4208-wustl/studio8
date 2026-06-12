@@ -56,7 +56,7 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
    In your answers, explain briefly whether the calls using pointers behave similarly to the calls using references, and why you think that is so.
 
-6. Replace the pointers from the previous exercise with two plain C++ pointers to the base class type and one plain C++ pointer to the derived class type. Initialize the pointers with calls to `new`, creating one base-class object and two derived-class objects. After all three pointers are initialized, use them to call the virtual member function, but do not call `delete` on the pointers.
+6. Replace the contents of `main` with two plain C++ pointers to the base class type and one plain C++ pointer to the derived class type. Initialize the pointers with calls to `new`, creating one base-class object and two derived-class objects. After all three pointers are initialized, use them to call the virtual member function, but do not call `delete` on the pointers.
 
    Build and run your program. In your answers, describe the main difference you saw in the output compared with the previous exercise.
 
