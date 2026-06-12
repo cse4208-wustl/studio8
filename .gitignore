@@ -1,0 +1,5 @@
+studio8
+*.o
+*.bak
+*~
+*.dSYM/
