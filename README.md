@@ -22,7 +22,7 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
 2. SSH into `shell.cec.wustl.edu` using your WUSTL Key credentials, then use `qlogin` to log into one of the Linux Lab machines and confirm that the version of `g++` there is correct, as you did in [Studio 0](https://github.com/cse4208-wustl/studio0).
 
-   Clone your `studio6` repo and work inside that cloned directory.
+   Clone your `studio8` repo and work inside that cloned directory.
 
    Define a `main` function for your program. At the top of the source file, include the `<cmath>` header, which declares standard mathematical functions including those originally provided by C.
 
