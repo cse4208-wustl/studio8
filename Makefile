@@ -1,10 +1,10 @@
 #               The name of the executable file you want to build
-EXECUTABLE      = studio5
+EXECUTABLE      = studio8
 
 #               Source (.cpp) files you want to compile
 #               (NOTE: Don't include header (.h) files, or any source (.cpp) files
 #               that only contain template class method definitions.)
-CMPL_SRCS       = studio5.cpp
+CMPL_SRCS       = studio8.cpp
 
 #               Source files containing only template class method definitions
 TMPL_SRCS       = Compose_T.cpp
