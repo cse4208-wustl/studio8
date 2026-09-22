@@ -65,6 +65,26 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
    Compile and run your program, and confirm that you see the same output as in the previous exercise. In your answers, show the code you wrote for this exercise.
 
+6. At the top of the source file containing `main`, include the `<vector>` and `<algorithm>` headers.
+
+   In `main`, declare a variable of type `std::vector<float>` named `samples`, initialized with several `float` values of your choosing (some above and some below 1.0).
+
+   Declare a variable of type `float` named `threshold` and initialize it to `1.0f`.
+
+   Call `std::count_if`, passing `samples.begin()`, `samples.end()`, and — written directly as the argument, without storing it in a variable first — a lambda that captures `threshold` in its capture list and returns whether its parameter is greater than `threshold`, for example:
+
+   ```c++
+   auto count = std::count_if(samples.begin(), samples.end(),
+                               [threshold](float x) { return x > threshold; });
+   ```
+
+   Output the value of `count`.
+
+   Compile and run your program. In your answers, show:
+
+   - the code you wrote for this exercise
+   - the output it produced
+
 ## Deliverables
 
 Commit and push all modified and added files to the repo.
