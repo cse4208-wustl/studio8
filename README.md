@@ -37,9 +37,13 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
 3. At the top of the source file containing `main`, include the `<functional>` header, which declares functions and templates for functional programming.
 
-   In `main`, declare a variable by appropriately instantiating the standard `function` template and initialize it with a lambda based on `std::sin`, as illustrated in lecture.
+   In `main`, declare a variable of type `std::function<float(float)>` and initialize it with a lambda that takes a `float` parameter and returns the result of calling `std::sin` on it, for example:
 
-   Declare another variable of the same callable type initialized with a lambda based on `std::cos`.
+   ```c++
+   std::function<float(float)> sinFn = [](float x) { return std::sin(x); };
+   ```
+
+   Declare another variable of the same type, this time initializing it with a lambda that returns the result of calling `std::cos` on its parameter.
 
    Output the value of the `float` variable from the previous exercise and the result of calling the first callable with the result of calling the second callable with that `float` variable. Chain the calls directly by wrapping the call to the first callable around the call to the second one.
 
